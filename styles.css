@@ -1,0 +1,148 @@
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto ;
+    width: 80vw;
+}
+
+.img1, .img2 {
+    border: 2px solid white;
+}
+
+.img5 {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.name-w, .caption-w {
+    color: white;
+}
+
+.name-b, .caption-b {
+    color: hsl(219, 29%, 14%);
+}
+
+.name-b span, .content-g{
+    color: hsl(219, 29%, 14%);
+    opacity: 50%;
+}
+
+.content-w {
+    color: white;
+    opacity: 50%;
+}
+
+.name-w span, .first-section .content-g, .second-section .content-g {
+    color: white;
+    opacity: 50%;
+}
+
+.container div {
+    border-radius: 10px;
+}
+
+h2 {
+    padding: 0 30px 0 30px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+    padding: 0 30px 30px 30px;
+}
+
+.names{
+    margin: 30px;
+}
+
+.first-section {
+    background-color: hsl(263, 55%, 52%);
+    grid-column: span 2;
+}
+
+.first-section .name-w {
+    z-index: 6;
+}
+
+.first-section, .quote {
+    position: relative;
+    z-index: 4;
+}
+
+.quote {
+    position: absolute;
+    right: 100px;
+    top: 0px;
+}
+
+.second-section {
+    background-color: hsl(217, 19%, 35%);
+    width: 20vw;
+}
+
+.third-section {
+    background-color: white;
+    grid-row:  span 2;
+    width: 18vw;
+}
+
+.fourth-section {
+    background-color: white;
+    width: 20vw;
+}
+
+.fifth-section {
+    background-color: hsl(219, 29%, 14%);
+    grid-column: span 2;
+}
+
+.names {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+img {
+    border-radius: 50px;
+    width: 40px;
+    margin: 10px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 1216px){
+    body {
+        height: max-content;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .first-section, .second-section, .third-section, .fourth-section, .fifth-section{
+        grid-column: span 3;
+    }
+
+    .second-section, .third-section, .fourth-section{
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .quote{
+        right: 20px;
+    }
+}
